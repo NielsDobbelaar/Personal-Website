@@ -1,0 +1,97 @@
+@import "../../assets/CssVariables/colors.css";
+.headerWrapper {
+  position: absolute;
+  width: 100%;
+  height: 2em;
+  margin-top: 0.5em;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.headerNavSection {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.headerNavItem {
+  margin: 0 3em;
+  font-size: 1.5em;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+.headerLanguageSection {
+  position: absolute;
+  left: 3em;
+  top: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.headerLanguageLabel {
+}
+
+/* media for responsive header */
+/* styling for language switcher below */
+@media (max-width: 1000px) {
+  .headerNavItem {
+    margin: 0 2em;
+    font-size: 1.5em;
+  }
+
+  .headerLanguageSection {
+    left: 1em;
+  }
+}
+
+@media (max-width: 850px) {
+  .headerNavItem {
+    margin: 0 1.5em;
+  }
+}
+
+@media (max-width: 750px) {
+  .headerNavItem {
+    margin: 0 1em;
+    font-size: 1.25em;
+  }
+}
+
+@media (max-width: 600px) {
+  .headerWrapper {
+    display: none;
+  }
+}
+
+/* language switcher */
+.switch {
+  height: 60%;
+  aspect-ratio: 18 / 10;
+  margin: 0 1em;
+  background-color: transparent;
+  display: flex;
+  justify-content: flex-start;
+  border-radius: 50px;
+  padding: 2px;
+  cursor: pointer;
+  border: 1px solid black;
+}
+
+.switch[data-ison="true"] {
+  justify-content: flex-end;
+}
+
+.handle {
+  height: 100%;
+  aspect-ratio: 1;
+  background-color: var(--color-secondary);
+  border-radius: 40px;
+}

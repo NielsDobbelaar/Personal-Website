@@ -1,0 +1,60 @@
+.headerHeroWrapper {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: url("../../assets/backgrounds/repeating-triangles.svg");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3em;
+}
+
+.headerText {
+  font-size: 5em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.subHeaderText {
+  font-size: 1.5em;
+  font-weight: normal;
+  text-align: center;
+  width: 35%;
+}
+
+.swipeAnimation {
+  position: absolute;
+  bottom: 1em;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media (max-width: 1200px) {
+  .subHeaderText {
+    width: 50%;
+  }
+}
+
+@media (max-width: 900px) {
+  .headerText {
+    font-size: 3.5em;
+  }
+  .subHeaderText {
+    width: 60%;
+    font-size: 1.25em;
+  }
+}
+
+@media (max-width: 600px) {
+  .subHeaderText {
+    width: 60%;
+    font-size: 1.125em;
+  }
+}
+@media (max-width: 500px) {
+  .subHeaderText {
+    width: 60%;
+    font-size: 1.125em;
+  }
+}

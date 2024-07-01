@@ -1,0 +1,73 @@
+.footerWrapper {
+  position: relative;
+  width: 80vw;
+  margin: 0 auto;
+  background: url("../../assets/backgrounds/repeating-triangles.svg");
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3em 0;
+}
+.footerSection {
+  width: 30%;
+}
+.tempBlock {
+  width: 2em;
+  height: 2em;
+  background: red;
+}
+.tempBlock:nth-child(1) {
+  margin-right: 1em;
+}
+
+.footerTitle {
+  font-size: 1.5em;
+  font-weight: bold;
+  padding-bottom: 0.5em;
+  color: var(--color-text-dark);
+}
+.footerSubtitle {
+  font-size: 1em;
+  font-weight: semi-bold;
+  color: var(--color-text-dark);
+}
+.footerSocials {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+@media (max-width: 1100px) {
+  .footerSection:nth-child(1) {
+    width: 40%;
+  }
+}
+
+@media (max-width: 800px) {
+  .footerSection:nth-child(1) {
+    width: 50%;
+  }
+}
+
+@media (max-width: 500px) {
+  .footerWrapper {
+    width: 90vw;
+    flex-direction: column;
+  }
+  .footerTitle {
+    text-align: left;
+  }
+  .footerSubTitle {
+    text-align: left;
+  }
+  .footerSection {
+    width: 100% !important;
+    margin-bottom: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+}

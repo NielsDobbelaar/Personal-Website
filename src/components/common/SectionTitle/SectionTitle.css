@@ -1,0 +1,37 @@
+@import "@CssVariables/colors.css";
+.sectionTitleContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sectionTitleh1 {
+  font-size: 3.5em;
+  font-weight: bold;
+  text-align: center;
+  color: var(--color-text-dark);
+}
+
+.animatedLine {
+  height: 4px;
+  background-color: var(--color-secondary);
+}
+
+@media (max-width: 1000px) {
+  .sectionTitleh1 {
+    font-size: 3em;
+  }
+}
+
+@media (max-width: 800px) {
+  .sectionTitleh1 {
+    font-size: 2.5em;
+  }
+}
+
+@media (max-width: 600px) {
+  .sectionTitleh1 {
+    font-size: 2em;
+  }
+}
