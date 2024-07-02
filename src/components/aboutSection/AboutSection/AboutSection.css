@@ -1,0 +1,66 @@
+@import "@CssVariables/colors.css";
+.aboutMeWrapper {
+  width: 80%;
+  margin: 2em auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.aboutMeTextSection {
+  width: 80%;
+  padding: 0 10% 0 0;
+}
+
+.aboutMeParagraph {
+  margin-bottom: 3em;
+  font-size: 1em;
+  line-height: 1.6em;
+  color: var(--color-text-dark);
+}
+
+.aboutMeBioSection {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 5%;
+}
+
+.aboutMeImage {
+  width: 80%;
+  border-radius: 1em;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.aboutMeSocialsBlockWrapper {
+  margin-top: 1em;
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.TechnologiesArticle {
+  width: 63em;
+  margin: 0 auto;
+  padding-bottom: 2em;
+}
+.technologiesTitle {
+  margin-bottom: 1em;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+  padding-bottom: 0.5em;
+  color: var(--color-text-dark);
+}
+.technologiesWrapper {
+  width: 100%;
+  display: grid;
+  grid-gap: 1em;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  /* display: flex; */
+  /* flex-wrap: wrap; /* Allows items to wrap to the next line */
+  /* gap: 1em; /* Adds spacing between items */
+}

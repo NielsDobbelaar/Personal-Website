@@ -1,13 +1,12 @@
 .footerWrapper {
   position: relative;
-  width: 80vw;
-  margin: 0 auto;
+  width: 100vw;
   background: url("../../assets/backgrounds/repeating-triangles.svg");
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 3em 0;
+  padding: 3em 10%;
 }
 .footerSection {
   width: 30%;

@@ -1,0 +1,23 @@
+.socialsBlockWrapper {
+  width: auto;
+}
+.socialsIcon {
+  width: 3em;
+  height: 3em;
+}
+.socialsIcon:nth-child(1) {
+  margin-right: 1em;
+}
+
+.socialsBlockTimer {
+  font-size: 1.5em;
+  font-weight: bold;
+  padding-bottom: 0.5em;
+  color: var(--color-text-dark);
+}
+.SocialsBlockSocialsWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}

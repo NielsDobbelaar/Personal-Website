@@ -1,5 +1,7 @@
 import "./Footer.css";
-function App() {
+import SocialsBlock from "@/components/common/socialsBlock/SocialsBlock";
+
+function Footer() {
   return (
     <footer className="footerWrapper">
       <section className="footerSection">
@@ -9,14 +11,10 @@ function App() {
         </p>
       </section>
       <section className="footerSection">
-        <h4 className="footerTitle">Socials</h4>
-        <section className="footerSocials">
-          <div className="tempBlock"></div>
-          <div className="tempBlock"></div>
-        </section>
+        <SocialsBlock title="Socials" />
       </section>
     </footer>
   );
 }
 
-export default App;
+export default Footer;

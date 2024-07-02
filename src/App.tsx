@@ -6,9 +6,12 @@ import AboutSection from "@/components/aboutSection/AboutSection/AboutSection";
 import ExperienceSection from "@/components/experienceSection/ExperienceSection/ExperienceSection";
 import ProjectsSection from "@/components/projectsSection/ProjectsSection/ProjectsSection";
 import Footer from "@/components/Footer/Footer";
+import en from "@/data/en.ts";
+import language from "@/types/language";
 
 function App() {
   const [scrollY, setScrollY] = useState(0);
+  const [translations, setTranslations] = useState<language>(en);
 
   const handleScroll = () => {
     setScrollY(window.scrollY);
@@ -28,7 +31,7 @@ function App() {
       {scrollY === 0 ? <Header /> : null}
       {/*<nav>Nav</nav> */}
       <main>
-        <AboutSection />
+        <AboutSection data={translations.aboutSection} />
         <ExperienceSection />
         <ProjectsSection />
       </main>

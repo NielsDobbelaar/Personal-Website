@@ -1,0 +1,21 @@
+@import "@CssVariables/colors.css";
+.technologyCardWrapper {
+  background: var(--color-foreground);
+  border: 1px solid var(--color-border);
+  border-radius: 1em;
+  width: 10em;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.techCardImg {
+  margin: 1em 3em 0.25em 3em;
+  width: 4em;
+  object-fit: contain;
+  aspect-ratio: 1;
+}
+.techCardTitle {
+  padding: 0.5em;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: 500;
+}
