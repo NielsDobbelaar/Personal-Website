@@ -43,7 +43,7 @@
 }
 
 .TechnologiesArticle {
-  width: 63em;
+  width: 65em;
   margin: 0 auto;
   padding-bottom: 2em;
 }
@@ -63,4 +63,73 @@
   /* display: flex; */
   /* flex-wrap: wrap; /* Allows items to wrap to the next line */
   /* gap: 1em; /* Adds spacing between items */
+}
+
+@media (max-width: 1200px) {
+  .TechnologiesArticle {
+    width: 41em;
+  }
+}
+
+@media (max-width: 1000px) {
+  .aboutMeImage {
+    width: 100%;
+  }
+  .aboutMeSocialsBlockWrapper {
+    width: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+  .aboutMeParagraph {
+    font-size: 0.75em;
+  }
+
+  .TechnologiesArticle {
+    width: 27em;
+  }
+  .technologiesWrapper {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  .aboutMeWrapper {
+    flex-direction: column;
+  }
+  .aboutMeTextSection {
+    width: 100%;
+    order: 2;
+    padding: 0;
+  }
+  .aboutMeBioSection {
+    width: 30%;
+    order: 1;
+    margin: 0 auto;
+    padding-bottom: 1em;
+  }
+}
+
+@media (max-width: 600px) {
+  .TechnologiesArticle {
+    width: 20em;
+  }
+  .technologiesWrapper {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+  .aboutMeBioSection {
+    width: 50%;
+  }
+}
+
+@media (max-width: 410px) {
+  .TechnologiesArticle {
+    width: 13em;
+  }
+  .technologiesWrapper {
+    grid-template-columns: 1fr 1fr;
+  }
 }

@@ -52,18 +52,19 @@
 
 @media (max-width: 500px) {
   .footerWrapper {
-    width: 90vw;
     flex-direction: column;
+    padding: 1em 10%;
   }
   .footerTitle {
+    font-size: 1.25em;
     text-align: left;
   }
   .footerSubTitle {
+    font-size: 0.75em;
     text-align: left;
   }
   .footerSection {
     width: 100% !important;
-    margin-bottom: 2em;
     display: flex;
     flex-direction: column;
     justify-content: center;

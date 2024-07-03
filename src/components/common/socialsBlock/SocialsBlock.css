@@ -21,3 +21,13 @@
   justify-content: flex-start;
   align-items: center;
 }
+
+@media (max-width: 900px) {
+  .socialsIcon {
+    width: 2em;
+    height: 2em;
+  }
+  .socialsIcon:nth-child(1) {
+    margin-right: 0.25em;
+  }
+}

@@ -8,8 +8,8 @@
 }
 
 .techCardImg {
-  margin: 1em 3em 0.25em 3em;
-  width: 4em;
+  margin: 1em 25% 0.25em 25%;
+  width: 50%;
   object-fit: contain;
   aspect-ratio: 1;
 }
@@ -18,4 +18,13 @@
   text-align: center;
   font-size: 1.5em;
   font-weight: 500;
+}
+
+@media (max-width: 1200px) {
+  .technologyCardWrapper {
+    width: 6em;
+  }
+  .techCardTitle {
+    font-size: 1em;
+  }
 }
