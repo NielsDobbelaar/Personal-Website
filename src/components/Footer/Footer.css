@@ -1,7 +1,7 @@
 .footerWrapper {
   position: relative;
   width: 100vw;
-  background: url("../../assets/backgrounds/repeating-triangles.svg");
+  background: url("backgrounds/repeating-triangles.svg");
   display: flex;
   flex-direction: row;
   justify-content: space-between;

@@ -1,5 +1,4 @@
 import "./HeaderHero.css";
-import swipeAnimation from "../../assets/images/swipe.gif";
 import { headerObject } from "@/types/language";
 
 type HeaderHeroProps = {
@@ -12,9 +11,7 @@ const HeaderHero: React.FC<HeaderHeroProps> = (props) => {
     <article className="headerHeroWrapper">
       <h1 className="headerText">{data.headerText}</h1>
       <h2 className="subHeaderText">{data.headerSubText}</h2>
-      {swipeAnimation ? (
-        <img src={swipeAnimation} className="swipeAnimation" />
-      ) : null}
+      <img src="images/swipe.gif" alt="Swipe down" className="swipeAnimation" />
     </article>
   );
 };
