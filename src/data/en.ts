@@ -1,6 +1,11 @@
 import language from "@/types/language.ts";
 
 const en: language = {
+  header: {
+    headerText: "Hi, I'm Niels Dobbelaar",
+    headerSubText:
+      "A motivated and enthusiastic frontend/ web developer and UX designer",
+  },
   sectionTitles: [
     {
       title: "About Me",
@@ -19,8 +24,8 @@ const en: language = {
     imageURL:
       "https://image.parool.nl/223773847/feature-crop/1200/1200/als-de-chimpansee-in-artis-voedsel-vindt-in-het-virtuele-bos",
     body: [
-      "Hi! I’m Niels, a 21 year old frontend developer and designer from The Netherlands with a passion for creating functional and accessible web applications. I am currently doing my graduation internship for Hogeschool Leiden at Rox, a digital agency. Besides my studies i  love to learn more about different parts of programming and frequently make vastly different side projects you can read more about in the Projects section.",
-      "I started programming during middle school by learning the basics of python and web development, eventually learning C# and unity for my final year project. Since then i stated (And have almost finished) my bachelor in Computer science, here I have learned far more technology mostly focusing on frontend development with some backend technologies like Laravel and Express.js. ",
+      "Hi! I’m Niels, a 21 year old frontend developer and designer from The Netherlands with a passion for creating functional and accessible web applications. I am currently doing my graduation internship for Hogeschool Leiden at Rox, a digital agency. Besides my studies I  love to learn more about different parts of programming and frequently make vastly different side projects you can read more about in the Projects section.",
+      "I started programming during middle school by learning the basics of python and web development, eventually learning C# and unity for my final year project. Since then I stated (And have almost finished) my bachelor in Computer science, here I have learned far more technology mostly focusing on frontend development with some backend technologies like Laravel and Express.js. ",
     ],
     technologiesTitle: "Technologies",
     technologies: [
@@ -83,6 +88,51 @@ const en: language = {
         name: "Git",
         iconURL:
           "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Git_icon.svg/2048px-Git_icon.svg.png",
+      },
+    ],
+  },
+  experienceSection: {
+    workExperience: [
+      {
+        position: "Graduation internship in web development",
+        company: "Rox Digital Agency",
+        startDate: "Sep 2024",
+        endDate: "Feb 2025",
+        description:
+          'As an intern at Rox Digital Agency, I will be starting my graduation internship focused on web development. The goal of this internship is to improve the interface of the "Woningzoeker", a project by Rox.',
+        technologies: ["React Native", "TypeScript", "Expo", "API's"],
+      },
+      {
+        position: "Frontend Developer",
+        company: "Fancee Nederland",
+        startDate: "April 2023",
+        endDate: "Juli 2023",
+        description:
+          "After my internship at Software Bastards, I worked part-time for several months at Fancee Netherlands. During this period, I continued working on the mobile application within the same team.",
+        technologies: ["React Native", "TypeScript", "Expo", "API's"],
+      },
+      {
+        position: "Frontend Develoment intern",
+        company: "Software Bastards",
+        startDate: "Nov 2022",
+        endDate: "April 2023",
+        description:
+          "As an intern at Software Bastards, I worked as a full-fledged developer on a new mobile application for Fancee Netherlands. In this project, I worked with Expo, React Native, TypeScript, and the Backend API.",
+        technologies: ["React Native", "TypeScript", "Expo", "API's"],
+      },
+    ],
+    education: [
+      {
+        institution: "Hogeschool Leiden",
+        degree: "Bachelor in Computer Science",
+        description:
+          "I am currently pursuing my Bachelor's degree in Computer Science with a specialization in Frontend Development and User Experience (UX), along with a minor in Sensor Technology. During my studies, I have focused on designing and implementing user-friendly interfaces, enhancing user interactions.",
+      },
+      {
+        institution: "Stanislascollege",
+        degree: "HAVO",
+        description:
+          "I completed my HAVO in 5 years with a focus on science and technology, and additional subjects in German and computer science. I also obtained the FCE (First Certificate in English) certificate from the Cambridge Assessment Institute.",
       },
     ],
   },

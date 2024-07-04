@@ -27,12 +27,12 @@ function App() {
 
   return (
     <>
-      <HeaderHero></HeaderHero>
+      <HeaderHero data={translations.header} />
       {scrollY === 0 ? <Header /> : null}
       {/*<nav>Nav</nav> */}
       <main>
         <AboutSection data={translations.aboutSection} />
-        <ExperienceSection />
+        <ExperienceSection data={translations.experienceSection} />
         <ProjectsSection />
       </main>
       <Footer />

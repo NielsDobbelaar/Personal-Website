@@ -57,4 +57,7 @@
     width: 60%;
     font-size: 1.125em;
   }
+  .swipeAnimation {
+    bottom: 5em;
+  }
 }
