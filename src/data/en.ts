@@ -21,8 +21,7 @@ const en: language = {
     },
   ],
   aboutSection: {
-    imageURL:
-      "https://image.parool.nl/223773847/feature-crop/1200/1200/als-de-chimpansee-in-artis-voedsel-vindt-in-het-virtuele-bos",
+    imageURL: "images/nielsDobbelaar.png",
     body: [
       "Hi! I’m Niels, a 21 year old frontend developer and designer from The Netherlands with a passion for creating functional and accessible web applications. I am currently doing my graduation internship for Hogeschool Leiden at Rox, a digital agency. Besides my studies I  love to learn more about different parts of programming and frequently make vastly different side projects you can read more about in the Projects section.",
       "I started programming during middle school by learning the basics of python and web development, eventually learning C# and unity for my final year project. Since then I stated (And have almost finished) my bachelor in Computer science, here I have learned far more technology mostly focusing on frontend development with some backend technologies like Laravel and Express.js. ",
