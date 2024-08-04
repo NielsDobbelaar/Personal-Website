@@ -1,10 +1,19 @@
 @import "@CssVariables/colors.css";
 .aboutMeWrapper {
+  position: relative;
   width: 80%;
   margin: 2em auto;
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+
+/* Very scuffed solution for scroll to about me section not showing in the right place */
+.aboutMeIdWrapper {
+  height: 1em;
+  width: 1em;
+  position: absolute;
+  top: -14em;
 }
 
 .aboutMeTextSection {

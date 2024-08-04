@@ -7,33 +7,57 @@ import ExperienceSection from "@/components/experienceSection/ExperienceSection/
 import ProjectsSection from "@/components/projectsSection/ProjectsSection/ProjectsSection";
 import Footer from "@/components/Footer/Footer";
 import en from "@/data/en.ts";
+import nl from "@/data/nl.ts";
+
 import language from "@/types/language";
 
 function App() {
-  const [scrollY, setScrollY] = useState(0);
   const [translations, setTranslations] = useState<language>(en);
+  const [isMobile, setIsMobile] = useState<boolean>(false);
 
-  const handleScroll = () => {
-    setScrollY(window.scrollY);
+  const changeLanguage = () => {
+    if (translations === en) {
+      setTranslations(nl);
+    } else {
+      setTranslations(en);
+    }
   };
 
   useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
+    const handleResize = () => {
+      if (window.innerWidth <= 600) {
+        setIsMobile(true);
+      } else {
+        setIsMobile(false);
+      }
+    };
+    window.addEventListener("resize", handleResize);
 
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
 
   return (
     <>
       <HeaderHero data={translations.header} />
-      {scrollY === 0 ? <Header /> : null}
+      {!isMobile ? (
+        <Header
+          changeLanguage={changeLanguage}
+          data={translations.sectionTitles}
+        />
+      ) : null}
       {/*<nav>Nav</nav> */}
       <main>
-        <AboutSection data={translations.aboutSection} />
-        <ExperienceSection data={translations.experienceSection} />
-        <ProjectsSection />
+        <AboutSection
+          sectionTitle={translations.sectionTitles[0]}
+          data={translations.aboutSection}
+        />
+        <ExperienceSection
+          sectionTitle={translations.sectionTitles[1]}
+          data={translations.experienceSection}
+        />
+        <ProjectsSection sectionTitle={translations.sectionTitles[2]} />
       </main>
       <Footer />
     </>

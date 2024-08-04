@@ -10,7 +10,7 @@ export type headerObject = {
   headerSubText: string;
 };
 
-type sectionTitleObject = {
+export type sectionTitleObject = {
   title: string;
   slug: string;
 };

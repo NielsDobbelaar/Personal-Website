@@ -1,11 +1,12 @@
 import SocialsBlock from "@/components/common/socialsBlock/SocialsBlock";
 import "./AboutSection.css";
 import SectionTitle from "@/components/common/SectionTitle/SectionTitle";
-import { aboutSectionObject } from "@/types/language";
+import { aboutSectionObject, sectionTitleObject } from "@/types/language";
 import TechnologyCard from "@/components/aboutSection/TechnologyCard/TechnologyCard";
 import { motion, Variants } from "framer-motion";
 
 type AboutSectionProps = {
+  sectionTitle: sectionTitleObject;
   data: aboutSectionObject;
 };
 
@@ -24,12 +25,13 @@ const imageVariants: Variants = {
 };
 
 const AboutSection: React.FC<AboutSectionProps> = (props) => {
-  const { data } = props;
+  const { data, sectionTitle } = props;
 
   return (
     <>
-      <SectionTitle title="About me" />
-      <article className="aboutMeWrapper" id="AboutMe">
+      <SectionTitle title={sectionTitle.title} />
+      <article className="aboutMeWrapper">
+        <div className="aboutMeIdWrapper" id={sectionTitle.slug}></div>
         <section className="aboutMeTextSection">
           {data.body.map((paragraph, index) => {
             return (
