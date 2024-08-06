@@ -19,6 +19,7 @@ const ExperienceSection: React.FC<ExperienceSectionProps> = (props) => {
           <ExperienceCard
             key={"ExperienceItem: " + index}
             data={experienceItem}
+            titles={data.titles}
           />
         ))}
       </section>
@@ -28,6 +29,7 @@ const ExperienceSection: React.FC<ExperienceSectionProps> = (props) => {
           <ExperienceCard
             key={"EducationItem: " + index}
             data={educationItem}
+            titles={data.titles}
           />
         ))}
       </section>

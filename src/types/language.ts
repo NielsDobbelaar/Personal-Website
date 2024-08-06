@@ -30,6 +30,7 @@ export type technologyObject = {
 export type experienceSectionObject = {
   workExperience: experienceObject[];
   education: experienceObject[];
+  titles: titlesObject;
 };
 
 export type experienceObject = {
@@ -41,6 +42,11 @@ export type experienceObject = {
   technologies?: string[];
   institution?: string;
   degree?: string;
+};
+
+export type titlesObject = {
+  company: string;
+  technologies: string;
 };
 
 export default language;

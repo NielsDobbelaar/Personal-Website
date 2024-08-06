@@ -1,4 +1,4 @@
-@import "../../assets/CssVariables/colors.css";
+@import "../../../assets/CssVariables/colors.css";
 .headerWrapper {
   z-index: 1000;
   position: fixed;
@@ -76,6 +76,23 @@ a {
   cursor: pointer;
 }
 
+.headerNavSectionMobile {
+  background: var(--color-foreground);
+  position: fixed;
+  top: 7.5%;
+  width: 100%;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.125);
+}
+
+.headerNavItemMobile {
+  padding: 0.5em 1.5em;
+  font-size: 1.5em;
+  font-weight: normal;
+  border-bottom: 0.05em solid var(--color-border-light);
+  cursor: pointer;
+  text-align: right;
+}
+
 /* media for responsive header */
 /* styling for language switcher below */
 @media (max-width: 1000px) {
@@ -106,6 +123,13 @@ a {
   .headerNavItem {
     margin: 0 1em;
     font-size: 1.125em;
+  }
+}
+
+@media (max-width: 600px) {
+  .headerWrapperScrolled {
+    box-shadow: none;
+    border-bottom: 0.09em solid var(--color-border-light);
   }
 }
 

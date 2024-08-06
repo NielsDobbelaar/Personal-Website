@@ -1,15 +1,16 @@
 import { useState } from "react";
-import { experienceObject } from "@/types/language";
+import { experienceObject, titlesObject } from "@/types/language";
 import "./ExperienceCard.css";
 import ExperienceCardHeader from "@/components/experienceSection/ExperienceCard/ExperienceCardHeader/ExperienceCardHeader";
 import ExperienceCardBody from "@/components/experienceSection/ExperienceCard/ExperienceCardBody/ExperienceCardBody";
 
 type ExperienceCardProps = {
   data: experienceObject;
+  titles: titlesObject;
 };
 
 const ExperienceCard: React.FC<ExperienceCardProps> = (props) => {
-  const { data } = props;
+  const { data, titles } = props;
 
   const [isBodyOpen, setIsBodyOpen] = useState<boolean>(false);
 
@@ -37,6 +38,7 @@ const ExperienceCard: React.FC<ExperienceCardProps> = (props) => {
           description={data.description}
           technologies={data.technologies}
           company={data.company}
+          titles={titles}
         />
       ) : null}
     </article>

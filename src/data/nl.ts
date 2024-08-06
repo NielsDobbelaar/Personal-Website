@@ -2,29 +2,29 @@ const nl = {
   header: {
     headerText: "Hoi, ik ben Niels Dobbelaar",
     headerSubText:
-      "A motivated and enthusiastic frontend/ web developer and UX designer",
+      "Een gemotiveerde en enthousiaste frontend/web developer en UX designer",
   },
   sectionTitles: [
     {
-      title: "About Me",
+      title: "Over Mij",
       slug: "aboutme",
     },
     {
-      title: "Experience",
+      title: "Ervaring",
       slug: "experience",
     },
     {
-      title: "Projects",
+      title: "Projecten",
       slug: "projects",
     },
   ],
   aboutSection: {
     imageURL: "images/nielsDobbelaar.png",
     body: [
-      "Hi! I’m Niels, a 21 year old frontend developer and designer from The Netherlands with a passion for creating functional and accessible web applications. I am currently doing my graduation internship for Hogeschool Leiden at Rox, a digital agency. Besides my studies I  love to learn more about different parts of programming and frequently make vastly different side projects you can read more about in the Projects section.",
-      "I started programming during middle school by learning the basics of python and web development, eventually learning C# and unity for my final year project. Since then I stated (And have almost finished) my bachelor in Computer science, here I have learned far more technology mostly focusing on frontend development with some backend technologies like Laravel and Express.js. ",
+      "Hoi! Ik ben Niels, een 21-jarige frontend ontwikkelaar en designer uit Nederland met een passie voor het creëren van functionele en toegankelijke webapplicaties. Ik doe momenteel mijn afstudeerstage voor Hogeschool Leiden bij Rox, een digital agency. Naast mijn studie leer ik graag meer over verschillende aspecten van programmeren en maak ik regelmatig zeer verschillende projecten waar je meer over kunt lezen in de Projecten-sectie.",
+      "Ik begon met programmeren tijdens de middelbare school door de basis van Python en webdevelopment te leren, en uiteindelijk C# en Unity te leren voor mijn profielwerkstuk. Sindsdien ben ik begonnen (en bijna klaar) met mijn bachelor in Informatica, waar ik veel meer technologieën heb geleerd, vooral gericht op frontend ontwikkeling met enkele backend technologieën zoals Laravel en Express.js.",
     ],
-    technologiesTitle: "Technologies",
+    technologiesTitle: "Technologieën",
     technologies: [
       {
         name: "React",
@@ -89,47 +89,51 @@ const nl = {
     ],
   },
   experienceSection: {
+    titles: {
+      company: "Bedrijf",
+      technologies: "Technologieën",
+    },
     workExperience: [
       {
-        position: "Graduation internship in web development",
+        position: "Afstudeerstage webdevelopment",
         company: "Rox Digital Agency",
         startDate: "Sep 2024",
         endDate: "Feb 2025",
         description:
-          'As an intern at Rox Digital Agency, I will be starting my graduation internship focused on web development. The goal of this internship is to improve the interface of the "Woningzoeker", a project by Rox.',
-        technologies: ["React Native", "TypeScript", "Expo", "API's"],
+          'Als stagiair bij Rox Digital Agency begin ik mijn afstudeerstage gericht op webontwikkeling. Het doel van deze stage is om de interface van de "Woningzoeker", een project van Rox, te verbeteren.',
+        technologies: ["React", "TypeScript", "API's"],
       },
       {
-        position: "Frontend Developer",
+        position: "Frontend Ontwikkelaar",
         company: "Fancee Nederland",
         startDate: "April 2023",
         endDate: "Juli 2023",
         description:
-          "After my internship at Software Bastards, I worked part-time for several months at Fancee Netherlands. During this period, I continued working on the mobile application within the same team.",
+          "Na mijn stage bij Software Bastards heb ik enkele maanden parttime gewerkt bij Fancee Nederland. Gedurende deze periode heb ik verder gewerkt aan de mobiele applicatie binnen hetzelfde team.",
         technologies: ["React Native", "TypeScript", "Expo", "API's"],
       },
       {
-        position: "Frontend Develoment intern",
+        position: "Frontend Ontwikkeling Stagiair",
         company: "Software Bastards",
         startDate: "Nov 2022",
         endDate: "April 2023",
         description:
-          "As an intern at Software Bastards, I worked as a full-fledged developer on a new mobile application for Fancee Netherlands. In this project, I worked with Expo, React Native, TypeScript, and the Backend API.",
+          "Als stagiair bij Software Bastards werkte ik als volwaardige ontwikkelaar aan een nieuwe mobiele applicatie voor Fancee Nederland. In dit project werkte ik met Expo, React Native, TypeScript en de Backend API.",
         technologies: ["React Native", "TypeScript", "Expo", "API's"],
       },
     ],
     education: [
       {
         institution: "Hogeschool Leiden",
-        degree: "Bachelor in Computer Science",
+        degree: "Bachelor in Informatica",
         description:
-          "I am currently pursuing my Bachelor's degree in Computer Science with a specialization in Frontend Development and User Experience (UX), along with a minor in Sensor Technology. During my studies, I have focused on designing and implementing user-friendly interfaces, enhancing user interactions.",
+          "Ik ben momenteel bezig met mijn Bachelor in Informatica met een specialisatie in Frontend Ontwikkeling en Gebruikerservaring (UX), samen met een minor in Sensor Technologie. Tijdens mijn studie heb ik me gericht op het ontwerpen en implementeren van gebruiksvriendelijke interfaces en het verbeteren van gebruikersinteracties.",
       },
       {
         institution: "Stanislascollege",
         degree: "HAVO",
         description:
-          "I completed my HAVO in 5 years with a focus on science and technology, and additional subjects in German and computer science. I also obtained the FCE (First Certificate in English) certificate from the Cambridge Assessment Institute.",
+          "Ik heb mijn HAVO in 5 jaar afgerond met een focus op wetenschap en technologie, en extra vakken in Duits en informatica. Ik heb ook het FCE (First Certificate in English) certificaat behaald van het Cambridge Assessment Institute.",
       },
     ],
   },

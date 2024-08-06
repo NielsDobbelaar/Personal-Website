@@ -1,7 +1,6 @@
 import "./App.css";
 import { useEffect, useState } from "react";
 import HeaderHero from "@/components/HeaderHero/HeaderHero";
-import Header from "@/components/Header/Header";
 import AboutSection from "@/components/aboutSection/AboutSection/AboutSection";
 import ExperienceSection from "@/components/experienceSection/ExperienceSection/ExperienceSection";
 import ProjectsSection from "@/components/projectsSection/ProjectsSection/ProjectsSection";
@@ -10,10 +9,11 @@ import en from "@/data/en.ts";
 import nl from "@/data/nl.ts";
 
 import language from "@/types/language";
+import DesktopHeader from "@/components/header/FullSizeHeader/DesktopHeader";
+import MobileHeader from "@/components/header/MobileHeader/MobileHeader";
 
 function App() {
   const [translations, setTranslations] = useState<language>(en);
-  const [isMobile, setIsMobile] = useState<boolean>(false);
 
   const changeLanguage = () => {
     if (translations === en) {
@@ -23,30 +23,13 @@ function App() {
     }
   };
 
-  useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth <= 600) {
-        setIsMobile(true);
-      } else {
-        setIsMobile(false);
-      }
-    };
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
-
   return (
     <>
       <HeaderHero data={translations.header} />
-      {!isMobile ? (
-        <Header
-          changeLanguage={changeLanguage}
-          data={translations.sectionTitles}
-        />
-      ) : null}
+      <DesktopHeader
+        changeLanguage={changeLanguage}
+        data={translations.sectionTitles}
+      />
       {/*<nav>Nav</nav> */}
       <main>
         <AboutSection

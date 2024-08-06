@@ -91,6 +91,10 @@ const en: language = {
     ],
   },
   experienceSection: {
+    titles: {
+      company: "Company",
+      technologies: "Technologies",
+    },
     workExperience: [
       {
         position: "Graduation internship in web development",
@@ -99,7 +103,7 @@ const en: language = {
         endDate: "Feb 2025",
         description:
           'As an intern at Rox Digital Agency, I will be starting my graduation internship focused on web development. The goal of this internship is to improve the interface of the "Woningzoeker", a project by Rox.',
-        technologies: ["React Native", "TypeScript", "Expo", "API's"],
+        technologies: ["React", "TypeScript", "API's"],
       },
       {
         position: "Frontend Developer",

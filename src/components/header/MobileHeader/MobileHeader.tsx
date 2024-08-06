@@ -1,14 +1,9 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import "./Header.css";
-import { sectionTitleObject } from "@/types/language";
+import "./MobileHeader.css";
+import { HeaderProps } from "../FullSizeHeader/DesktopHeader";
 
-type HeaderProps = {
-  changeLanguage: () => void;
-  data: sectionTitleObject[];
-};
-
-const Header: React.FC<HeaderProps> = (props) => {
+const MobileHeader: React.FC<HeaderProps> = (props) => {
   const { changeLanguage, data } = props;
   const [isDutch, setDutch] = useState<boolean>(false);
   const [isUp, setIsUp] = useState<boolean>(false);
@@ -133,4 +128,4 @@ const Header: React.FC<HeaderProps> = (props) => {
   );
 };
 
-export default Header;
+export default MobileHeader;
