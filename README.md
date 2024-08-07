@@ -43,6 +43,15 @@ As a side project during the summer break and to sharpen my React skills for an 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## Todo
+
+- [x] Rebuild header
+- [] build projects section
+- [] project section content
+- [] link to supabase or firebase
+- [] test/ perfect accessibility
+- [] publish / host
+
 ## Credits
 
 - [Niels Dobbelaar](https://github.com/NielsDobbelaar)

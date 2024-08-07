@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import "./DesktopHeader.css";
+import "./Header.css";
 import { sectionTitleObject } from "@/types/language";
 
 export type HeaderProps = {
@@ -8,7 +8,7 @@ export type HeaderProps = {
   data: sectionTitleObject[];
 };
 
-const DesktopHeader: React.FC<HeaderProps> = (props) => {
+const Header: React.FC<HeaderProps> = (props) => {
   const { changeLanguage, data } = props;
   const [isDutch, setDutch] = useState<boolean>(false);
   const [isUp, setIsUp] = useState<boolean>(false);
@@ -52,12 +52,10 @@ const DesktopHeader: React.FC<HeaderProps> = (props) => {
   const mobileNavVariants = {
     up: {
       top: ["-100%", "7.5%"],
-      zIndex: [-1, 2],
       transition: { duration: 0.5 },
     },
     down: {
       top: ["7.5%", "-100%"],
-      zIndex: [2, -1],
       transition: {
         duration: 0.5,
       },
@@ -163,41 +161,63 @@ const DesktopHeader: React.FC<HeaderProps> = (props) => {
           </section>
         ) : (
           <section className="headerNavSection">
-            <button onClick={() => setIsUp(!isUp)}>iek</button>
+            {isUp ? (
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="100%"
+                onClick={() => setIsUp(!isUp)}
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="M6.4 19L5 17.6l5.6-5.6L5 6.4L6.4 5l5.6 5.6L17.6 5L19 6.4L13.4 12l5.6 5.6l-1.4 1.4l-5.6-5.6z"
+                />
+              </svg>
+            ) : (
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="100%"
+                viewBox="0 0 24 24"
+                onClick={() => setIsUp(!isUp)}
+              >
+                <path
+                  fill="currentColor"
+                  d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"
+                />
+              </svg>
+            )}
           </section>
         )}
       </motion.article>
-      {isMobile ? (
-        <motion.section
-          animate={isUp ? "up" : "down"}
-          variants={mobileNavVariants}
-          className="headerNavSectionMobile"
-        >
-          {data.map((sectionHeader) => {
-            return (
-              <a
-                key={"headerlinkto-" + sectionHeader.slug}
-                className="headerNavItemWrapperMobile"
-                href={"#" + sectionHeader.slug}
-                onClick={() => setIsUp(!isUp)}
+      <motion.section
+        animate={isUp ? "up" : "down"}
+        variants={mobileNavVariants}
+        className="headerNavSectionMobile"
+      >
+        {data.map((sectionHeader) => {
+          return (
+            <a
+              key={"headerlinkto-" + sectionHeader.slug}
+              className="headerNavItemWrapperMobile"
+              href={"#" + sectionHeader.slug}
+              onClick={() => setIsUp(!isUp)}
+            >
+              <motion.h3
+                initial={{ opacity: 1, scale: 1.2 }}
+                animate={{ opacity: 1, scale: 1 }}
+                whileHover={{ scale: 1.05, translateY: -1 }}
+                whileTap={{ scale: 0.9 }}
+                transition={{ duration: 0.3 }}
+                className="headerNavItemMobile"
               >
-                <motion.h3
-                  initial={{ opacity: 1, scale: 1.2 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  whileHover={{ scale: 1.05, translateY: -1 }}
-                  whileTap={{ scale: 0.9 }}
-                  transition={{ duration: 0.3 }}
-                  className="headerNavItemMobile"
-                >
-                  {sectionHeader.title}
-                </motion.h3>
-              </a>
-            );
-          })}
-        </motion.section>
-      ) : null}
+                {sectionHeader.title}
+              </motion.h3>
+            </a>
+          );
+        })}
+      </motion.section>
     </>
   );
 };
 
-export default DesktopHeader;
+export default Header;
