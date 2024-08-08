@@ -137,6 +137,42 @@ const nl = {
       },
     ],
   },
+  projectSection: {
+    buttonText: "Lees meer",
+    projects: [
+      {
+        title: "Persoonlijke website",
+        description:
+          "Als sideproject tijdens de zomervakantie en om mijn React-vaardigheden te verbeteren voor een aanstaande stage, besloot ik een persoonlijke website te maken. Deze website zal worden gebruikt als een plek om mijn projecten te tonen.",
+        imageURL: "images/projectWebsite.png",
+        redirect: "https://github.com/NielsDobbelaar/Personal-Website",
+        technologies: ["React", "TypeScript", "Framer Motion"],
+      },
+      {
+        title: "Basil-IQ",
+        description:
+          "Als eindproject tijdens mijn minor in sensortechnologie heb ik gewerkt aan de hardware voor een project genaamd Basil-IQ. Het doel van dit project was om een systeem te creëren dat basilicumplanten kon monitoren en vervolgens automatisch water kon geven wanneer nodig. Het systeem was opgebouwd met een Raspberry Pi, sensoren en een Python-script dat de sensorinformatie las en vervolgens naar een server verzond.",
+        imageURL: "images/basil-iq.png",
+        redirect: "https://github.com/NielsDobbelaar",
+        technologies: ["Python", "API's", "RPi", "Sensors"],
+      },
+      {
+        title: "1BRC",
+        description:
+          'Het doel van dit project project was het leren van Golang en het leren van optimalisatietechnieken door de "one billion rows challenge" te proberen. Het doel was om een programma te maken dat een JSON-bestand met 1 miljard rijen van weergegevens kon lezen en vervolgens de minimum-, gemiddelde en maximumtemperatuur per weerstation kon berekenen.',
+        imageURL: "images/1brc.png",
+        redirect: "https://github.com/NielsDobbelaar/1brc",
+        technologies: ["Golang"],
+      },
+      {
+        title: "Snakes",
+        description:
+          'Momenteel werk ik aan een nieuw project genaamd "Snakes", een spel waar je met meerdere mensen op hetzelfde scherm snake kunt spelen. Het doel van dit project is om meer te leren over websockets en multiplayer-games. De backend wordt geschreven in Golang terwijl ik p5js gebruik voor de frontend.',
+        imageURL: "images/Snakes.webp",
+        technologies: ["Golang", "Websockets", "P5js", "React"],
+      },
+    ],
+  },
 };
 
 export default nl;

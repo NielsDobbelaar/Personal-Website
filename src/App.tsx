@@ -39,7 +39,10 @@ function App() {
           sectionTitle={translations.sectionTitles[1]}
           data={translations.experienceSection}
         />
-        <ProjectsSection sectionTitle={translations.sectionTitles[2]} />
+        <ProjectsSection
+          data={translations.projectSection}
+          sectionTitle={translations.sectionTitles[2]}
+        />
       </main>
       <Footer />
     </>

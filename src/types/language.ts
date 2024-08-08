@@ -3,6 +3,7 @@ type language = {
   sectionTitles: sectionTitleObject[];
   aboutSection: aboutSectionObject;
   experienceSection: experienceSectionObject;
+  projectSection: projectSectionObject;
 };
 
 export type headerObject = {
@@ -47,6 +48,19 @@ export type experienceObject = {
 export type titlesObject = {
   company: string;
   technologies: string;
+};
+
+export type projectSectionObject = {
+  projects: projectObject[];
+  buttonText: string;
+};
+
+export type projectObject = {
+  title: string;
+  description: string;
+  imageURL: string;
+  redirect?: string;
+  technologies?: string[];
 };
 
 export default language;

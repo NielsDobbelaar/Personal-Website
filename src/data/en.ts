@@ -139,6 +139,41 @@ const en: language = {
       },
     ],
   },
+  projectSection: {
+    buttonText: "Read more",
+    projects: [
+      {
+        title: "Personal website",
+        description:
+          "As a side project during the summer break and to sharpen my React skills for an upcoming internship I decided to create a personal website. This website will be used as a portfolio and a place to showcase my projects.",
+        imageURL: "images/projectWebsite.png",
+        redirect: "https://github.com/NielsDobbelaar/Personal-Website",
+        technologies: ["React", "TypeScript", "Framer Motion"],
+      },
+      {
+        title: "Basil-IQ",
+        description:
+          "As the final project during my minor in sensor technology I worked onthe hardware for a project called Basil-IQ. The goal of this project was to create a system that could monitor basil plants in  and then automatically water them when needed. The system was built using a Raspberry Pi, sensors, and a python system that would read the sensor data and then send it to a server.",
+        imageURL: "images/basil-iq.png",
+        redirect: "https://github.com/NielsDobbelaar",
+        technologies: ["Python", "API's", "RPi", "Sensors"],
+      },
+      {
+        title: "1BRC",
+        description:
+          "This project was about learning Golang and trying to learn more optimisation techniques by solving the 1 billion rows challenge. The goal was to create a program that could read a JSON file with 1 billion rows of weather data and then calculate the min, mean, and max temperature per weather station.",
+        imageURL: "images/1brc.png",
+        redirect: "https://github.com/NielsDobbelaar/1brc",
+        technologies: ["Golang"],
+      },
+      {
+        title: "Snakes",
+        description: `Currently i'm working on a new project cales "Snakes" a game where you can play snake with multiple people on the same screen. The goal of this project is to learn more about websockets and multiplayer games. The backend is going to be written in Golang while im using p5js for the frontend.`,
+        imageURL: "images/Snakes.webp",
+        technologies: ["Golang", "Websockets", "P5js", "React"],
+      },
+    ],
+  },
 };
 
 export default en;

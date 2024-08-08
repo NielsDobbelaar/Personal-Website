@@ -42,11 +42,11 @@ const Header: React.FC<HeaderProps> = (props) => {
       }
     };
 
-    handleScroll();
-    handleResize();
-
-    window.addEventListener("scroll", handleScroll);
     window.addEventListener("resize", handleResize);
+    window.addEventListener("scroll", handleScroll);
+
+    handleResize();
+    handleScroll();
   }, []);
 
   const mobileNavVariants = {
@@ -190,7 +190,7 @@ const Header: React.FC<HeaderProps> = (props) => {
         )}
       </motion.article>
       <motion.section
-        animate={isUp ? "up" : "down"}
+        animate={isUp && isMobile ? "up" : "down"}
         variants={mobileNavVariants}
         className="headerNavSectionMobile"
       >
