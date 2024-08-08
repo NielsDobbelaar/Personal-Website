@@ -46,11 +46,11 @@ As a side project during the summer break and to sharpen my React skills for an 
 ## Todo
 
 - [x] Rebuild header
-- [] build projects section
-- [] project section content
-- [] link to supabase or firebase
-- [] test/ perfect accessibility
-- [] publish / host
+  [ ] build projects section
+- [ ] project section content
+- [ ] link to supabase or firebase
+- [ ] test/ perfect accessibility
+- [ ] publish / host
 
 ## Credits
 
