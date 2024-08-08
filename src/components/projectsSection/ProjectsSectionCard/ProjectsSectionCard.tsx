@@ -38,7 +38,7 @@ const ProjectsSectionCard: React.FC<ProjectsSectionCardProps> = (props) => {
           <img
             className="flipCardFrontImage"
             src={cardData.imageURL}
-            alt="Avatar"
+            alt={"Avatar for " + cardData.title}
           />
           <div className="flipCardFrontOverlay">
             <h2 className="flipCardFrontTitle">{cardData.title}</h2>

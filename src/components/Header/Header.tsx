@@ -108,6 +108,7 @@ const Header: React.FC<HeaderProps> = (props) => {
             variants={pullTabVariants}
             className="pullTabWrapper"
             onClick={() => setIsUp(!isUp)}
+            aria-label="Open/close navigation"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -122,19 +123,29 @@ const Header: React.FC<HeaderProps> = (props) => {
             </svg>
           </motion.button>
         ) : null}
-        <section className="headerLogoWrapper">
-          <img src="/favicon.ico" alt="Logo" className="headerLogo" />
+        <section role="banner" className="headerLogoWrapper">
+          <img src="/favicon.ico" alt="Header Logo" className="headerLogo" />
         </section>
-        <section className="headerLanguageSection">
-          <h4 className="headerLanguageLabel">NL</h4>
-          <div className="switch" data-ison={!isDutch} onClick={flipLanguage}>
+        <section
+          aria-label="language switcher section"
+          className="headerLanguageSection"
+        >
+          <p className="headerLanguageLabel">NL</p>
+          <div
+            role="switch"
+            aria-checked={isDutch}
+            aria-label="Language switch"
+            className="switch"
+            data-ison={!isDutch}
+            onClick={flipLanguage}
+          >
             <motion.div
               className="handle"
               layout
               transition={{ type: "spring", stiffness: 260, damping: 20 }}
             />
           </div>
-          <h4 className="headerLanguageLabel">EN</h4>
+          <p className="headerLanguageLabel">EN</p>
         </section>
         {!isMobile ? (
           <section className="headerNavSection">
@@ -189,33 +200,35 @@ const Header: React.FC<HeaderProps> = (props) => {
           </section>
         )}
       </motion.article>
-      <motion.section
-        animate={isUp && isMobile ? "up" : "down"}
-        variants={mobileNavVariants}
-        className="headerNavSectionMobile"
-      >
-        {data.map((sectionHeader) => {
-          return (
-            <a
-              key={"headerlinkto-" + sectionHeader.slug}
-              className="headerNavItemWrapperMobile"
-              href={"#" + sectionHeader.slug}
-              onClick={() => setIsUp(!isUp)}
-            >
-              <motion.h3
-                initial={{ opacity: 1, scale: 1.2 }}
-                animate={{ opacity: 1, scale: 1 }}
-                whileHover={{ scale: 1.05, translateY: -1 }}
-                whileTap={{ scale: 0.9 }}
-                transition={{ duration: 0.3 }}
-                className="headerNavItemMobile"
+      {isMobile ? (
+        <motion.section
+          animate={isUp && isMobile ? "up" : "down"}
+          variants={mobileNavVariants}
+          className="headerNavSectionMobile"
+        >
+          {data.map((sectionHeader) => {
+            return (
+              <a
+                key={"headerlinkto-" + sectionHeader.slug}
+                className="headerNavItemWrapperMobile"
+                href={"#" + sectionHeader.slug}
+                onClick={() => setIsUp(!isUp)}
               >
-                {sectionHeader.title}
-              </motion.h3>
-            </a>
-          );
-        })}
-      </motion.section>
+                <motion.h3
+                  initial={{ opacity: 1, scale: 1.2 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  whileHover={{ scale: 1.05, translateY: -1 }}
+                  whileTap={{ scale: 0.9 }}
+                  transition={{ duration: 0.3 }}
+                  className="headerNavItemMobile"
+                >
+                  {sectionHeader.title}
+                </motion.h3>
+              </a>
+            );
+          })}
+        </motion.section>
+      ) : null}
     </>
   );
 };

@@ -50,7 +50,7 @@ const AboutSection: React.FC<AboutSectionProps> = (props) => {
           <motion.img
             className="aboutMeImage"
             src={data.imageURL}
-            alt="profile image"
+            alt="Me, smiling in front of a camera. in a suit."
             variants={imageVariants}
           />
           <div className="aboutMeSocialsBlockWrapper">
@@ -59,7 +59,7 @@ const AboutSection: React.FC<AboutSectionProps> = (props) => {
         </motion.section>
       </article>
       <article className="TechnologiesArticle">
-        <h3 className="technologiesTitle">{data.technologiesTitle}</h3>
+        <h2 className="technologiesTitle">{data.technologiesTitle}</h2>
         <motion.section
           className="technologiesWrapper"
           initial="offscreen"

@@ -33,9 +33,9 @@ const TechnologyCard: React.FC<TechnologyCardProps> = (props) => {
       <img
         className="techCardImg"
         src={technology.iconURL}
-        alt={technology.name}
+        alt="" /* empty alt tag because h3 gives enough context */
       />
-      <h4 className="techCardTitle">{technology.name}</h4>
+      <h3 className="techCardTitle">{technology.name}</h3>
     </motion.div>
   );
 };

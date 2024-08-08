@@ -48,7 +48,7 @@ As a side project during the summer break and to sharpen my React skills for an 
 - [x] Rebuild header
 - [x] build projects section
 - [x] project section content
-- [ ] test/ perfect accessibility
+- [x] test/ perfect accessibility
 - [x] publish / host
 
 ## Credits
