@@ -24,7 +24,7 @@ const en: language = {
     imageURL: "images/nielsDobbelaar.png",
     body: [
       "Hi! I’m Niels, a 21 year old frontend developer and designer from The Netherlands with a passion for creating functional and accessible web applications. I am currently doing my graduation internship for Hogeschool Leiden at Rox, a digital agency. Besides my studies I  love to learn more about different parts of programming and frequently make vastly different side projects you can read more about in the Projects section.",
-      "I started programming during middle school by learning the basics of python and web development, eventually learning C# and unity for my final year project. Since then I stated (And have almost finished) my bachelor in Computer science, here I have learned far more technology mostly focusing on frontend development with some backend technologies like Laravel and Express.js. ",
+      "I started programming during middle school by learning the basics of python and web development, eventually learning C# and unity for my final year project. Since then I started (and have almost finished) my bachelor in Computer science, here I have learned far more technology mostly focusing on frontend development with some backend technologies like Laravel and Express.js. ",
     ],
     technologiesTitle: "Technologies",
     technologies: [
@@ -168,7 +168,7 @@ const en: language = {
       },
       {
         title: "Snakes",
-        description: `Currently i'm working on a new project cales "Snakes" a game where you can play snake with multiple people on the same screen. The goal of this project is to learn more about websockets and multiplayer games. The backend is going to be written in Golang while im using p5js for the frontend.`,
+        description: `Currently i'm working on a new project caled "Snakes" a game where you can play snake with multiple people on the same screen. The goal of this project is to learn more about websockets and multiplayer games. The backend is going to be written in Golang while im using p5js for the frontend.`,
         imageURL: "images/Snakes.webp",
         technologies: ["Golang", "Websockets", "P5js", "React"],
       },

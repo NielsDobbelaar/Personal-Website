@@ -11,7 +11,8 @@ type ExperienceSectionProps = {
 const ExperienceSection: React.FC<ExperienceSectionProps> = (props) => {
   const { data, sectionTitle } = props;
   return (
-    <article className="experienceSectionWrapper" id={sectionTitle.slug}>
+    <article className="experienceSectionWrapper">
+      <div className="idWrapper" id={sectionTitle.slug}></div>
       <SectionTitle title={sectionTitle.title} />
       <section className="experienceSection">
         <h2 className="experienceSectionHeader">Work Experience</h2>

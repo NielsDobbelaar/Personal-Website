@@ -11,7 +11,8 @@ type ProjectsSectionProps = {
 const ProjectsSection: React.FC<ProjectsSectionProps> = (props) => {
   const { sectionTitle, data } = props;
   return (
-    <article className="projectsSectionArticle" id={sectionTitle.slug}>
+    <article className="projectsSectionArticle">
+      <div className="idWrapper" id={sectionTitle.slug}></div>
       <SectionTitle title={sectionTitle.title} />
       <section className="projectsSectionGrid">
         {data.projects.map((project, index) => {

@@ -31,7 +31,7 @@ const AboutSection: React.FC<AboutSectionProps> = (props) => {
     <>
       <SectionTitle title={sectionTitle.title} />
       <article className="aboutMeWrapper">
-        <div className="aboutMeIdWrapper" id={sectionTitle.slug}></div>
+        <div className="idWrapper" id={sectionTitle.slug}></div>
         <section className="aboutMeTextSection">
           {data.body.map((paragraph, index) => {
             return (
