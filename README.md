@@ -48,9 +48,8 @@ As a side project during the summer break and to sharpen my React skills for an 
 - [x] Rebuild header
 - [x] build projects section
 - [x] project section content
-- [ ] link to supabase or firebase
 - [ ] test/ perfect accessibility
-- [ ] publish / host
+- [x] publish / host
 
 ## Credits
 
