@@ -124,7 +124,11 @@ const Header: React.FC<HeaderProps> = (props) => {
           </motion.button>
         ) : null}
         <section role="banner" className="headerLogoWrapper">
-          <img src="/favicon.ico" alt="Header Logo" className="headerLogo" />
+          <img
+            src="/images/logo.webp"
+            alt="Header Logo"
+            className="headerLogo"
+          />
         </section>
         <section
           aria-label="language switcher section"

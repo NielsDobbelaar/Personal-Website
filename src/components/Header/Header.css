@@ -28,6 +28,7 @@
 
 .headerLogoWrapper {
   display: flex;
+  height: 100%;
   flex-direction: row;
   align-items: center;
   margin-left: 1em;
@@ -35,6 +36,8 @@
 
 .headerLogo {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.125);
+  height: 100%;
+  aspect-ratio: 1;
 }
 
 a {
