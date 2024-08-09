@@ -1,5 +1,5 @@
 import "./App.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import HeaderHero from "@/components/HeaderHero/HeaderHero";
 import AboutSection from "@/components/aboutSection/AboutSection/AboutSection";
 import ExperienceSection from "@/components/experienceSection/ExperienceSection/ExperienceSection";
@@ -12,6 +12,13 @@ import language from "@/types/language";
 import Header from "@/components/Header/Header";
 
 function App() {
+  useEffect(() => {
+    // if location after refresh is not just / redirect to /
+    if (window.location.pathname !== "/") {
+      window.location.href = "/";
+    }
+  }, []);
+
   const [translations, setTranslations] = useState<language>(en);
 
   const changeLanguage = () => {
