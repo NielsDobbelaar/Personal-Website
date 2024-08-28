@@ -141,6 +141,14 @@ const nl = {
     buttonText: "Lees meer",
     projects: [
       {
+        title: "Snakes",
+        description:
+          'Momenteel werk ik aan een nieuw project genaamd "Snakes", een spel waar je met meerdere mensen op hetzelfde scherm snake kunt spelen. Het doel van dit project is om meer te leren over websockets en multiplayer-games. De backend wordt geschreven in Golang terwijl ik p5js gebruik voor de frontend.',
+        imageURL: "images/Snakes.webp",
+        technologies: ["Golang", "Websockets", "P5js"],
+        redirect: "https://snakes.nielsdobbelaar.nl",
+      },
+      {
         title: "Persoonlijke website",
         description:
           "Als sideproject tijdens de zomervakantie en om mijn React-vaardigheden te verbeteren voor een aanstaande stage, besloot ik een persoonlijke website te maken. Deze website zal worden gebruikt als een plek om mijn projecten te tonen.",
@@ -163,13 +171,6 @@ const nl = {
         imageURL: "images/1brc.png",
         redirect: "https://github.com/NielsDobbelaar/1brc",
         technologies: ["Golang"],
-      },
-      {
-        title: "Snakes",
-        description:
-          'Momenteel werk ik aan een nieuw project genaamd "Snakes", een spel waar je met meerdere mensen op hetzelfde scherm snake kunt spelen. Het doel van dit project is om meer te leren over websockets en multiplayer-games. De backend wordt geschreven in Golang terwijl ik p5js gebruik voor de frontend.',
-        imageURL: "images/Snakes.webp",
-        technologies: ["Golang", "Websockets", "P5js", "React"],
       },
     ],
   },

@@ -143,6 +143,13 @@ const en: language = {
     buttonText: "Read more",
     projects: [
       {
+        title: "Snakes",
+        description: `Currently i'm working on a new project caled "Snakes" a game where you can play snake with multiple people on the same screen. The goal of this project is to learn more about websockets and multiplayer games. The backend is going to be written in Golang while im using p5js for the frontend.`,
+        imageURL: "images/Snakes.webp",
+        technologies: ["Golang", "Websockets", "P5js"],
+        redirect: "https://snakes.nielsdobbelaar.nl",
+      },
+      {
         title: "Personal website",
         description:
           "As a side project during the summer break and to sharpen my React skills for an upcoming internship I decided to create a personal website. This website will be used as a portfolio and a place to showcase my projects.",
@@ -165,12 +172,6 @@ const en: language = {
         imageURL: "images/1brc.png",
         redirect: "https://github.com/NielsDobbelaar/1brc",
         technologies: ["Golang"],
-      },
-      {
-        title: "Snakes",
-        description: `Currently i'm working on a new project caled "Snakes" a game where you can play snake with multiple people on the same screen. The goal of this project is to learn more about websockets and multiplayer games. The backend is going to be written in Golang while im using p5js for the frontend.`,
-        imageURL: "images/Snakes.webp",
-        technologies: ["Golang", "Websockets", "P5js", "React"],
       },
     ],
   },
